@@ -11,7 +11,7 @@ export default class NewsApiService {
 async myApi() {
     
     const url = await axios.get(`
-    https://pixabay.com/api/?key=${API_KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`
+    https://pixabay.com/api/?key=${this.API_KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`
 );
     return url.data;
   
