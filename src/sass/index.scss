@@ -55,9 +55,9 @@
 }
 
 .submit-btn {
-    color: #fff;
+    color: rgb(0, 0, 0);
     cursor: pointer;
-    background-color: gray;
+    background-color: rgb(232, 247, 22);
     border: none;
     border-radius: 0 4px 4px 0;
     padding: 4px;
@@ -76,4 +76,28 @@
     margin-right: auto;
     font-size: 12px;
     display: flex;
+    text-decoration: none;
+    color: black;
+}
+button.is-hidden {
+    display: none;
+}
+
+.load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #0f31f1;
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
 }
