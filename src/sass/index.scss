@@ -36,8 +36,11 @@
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
 }
 
-.card__img { 
-    display: block;
-    max-width: 100%; 
+.card-img {
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
     object-fit: cover;
+    transition: transform var(--animation-duration)var(--timing-function);
+    border-radius: 4px 4px 0 0;
 }
