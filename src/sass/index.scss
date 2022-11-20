@@ -36,11 +36,40 @@
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
 }
 
-.card-img {
+.card-image {
     box-sizing: border-box;
     height: 200px;
     width: 100%;
     object-fit: cover;
     transition: transform var(--animation-duration)var(--timing-function);
     border-radius: 4px 4px 0 0;
+}
+
+.input {
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    padding: 4px;
+    font-size: 16px;
+    box-shadow: 0 2px rgb(0 0 0 / 15%);
+}
+
+.submit-btn {
+    color: #fff;
+    cursor: pointer;
+    background-color: gray;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 4px;
+    transition: background-color .25s cubic-bezier(.4,0,.2,1),color .25s cubic-bezier(.4,0,.2,1),border-bottom .25s cubic-bezier(.4,0,.2,1),box-shadow .25s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 2px rgb(0 0 0 / 15%);
+}
+.info {
+    text-align: center;
+    margin: 10px 5px;
+    display: flex;
+}
+.info_item {
+   font-size: 12px;
+   
 }
