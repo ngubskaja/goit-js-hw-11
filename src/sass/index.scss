@@ -1,2 +1,11 @@
 @import './common';
 @import './example';
+.gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 0;
+    list-style: none;
+    display: flex;
+}
