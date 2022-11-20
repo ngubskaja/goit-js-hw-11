@@ -74,7 +74,7 @@ loadMoreBtn.refs.button.addEventListener('click', fetchHits);
   refs.gallery.innerHTML ='';
  }
  function createResultMarkup(hits){
-  refs.gallery.insertAdjacentElement('beforeend' , cards(hits));
+  refs.gallery.insertAdjacentHTML('beforeend' , cards(hits));
  }
 
  
