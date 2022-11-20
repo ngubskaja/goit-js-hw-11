@@ -60,7 +60,7 @@ loadMoreBtn.refs.button.addEventListener('click', fetchHits);
     Notify.warning('Sorry, there are no images matching your search query. Please try again.')
     clearArticleContainer()
   }
-  newsApiService.incrimentPages()
+  newsApiService.incrimentPage()
   if(totalPages > totalHits) {
     Notify.info(`We're sorry, but you've reached the end of search results.`)
     return loadMoreBtn.hide()

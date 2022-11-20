@@ -11,23 +11,27 @@
   <script type="module" src="./index.js"></script>
 </head>
 
-<body>
-
-  <form class="search-form" id="search-form">
-    <input class='search-form__input' type="text" name="searchQuery" autocomplete="off"
-      placeholder="Search images..." />
-    <button class="search-form__button" type="submit">Search</button>
-  </form>
-
+<section class="search">
   <div class="container">
-    <div class="gallery"></div>
+    <div class="search__wrapper">
+  <form class="search-form" id="search-form">
+    <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+    <button type="submit">Search</button>
+  </form>
   </div>
+</div>
+  </section>
+  <section>
+  <div class="container">
+  <div class="gallery">
+    <!-- Картки зображень -->
+</div>
   <button type="button" class="load-more" data-action="load-more">
-    <span class="label">Показать еще</span>
+    <span class="label">Load more</span>
   </button>
   
-  <script type="module" src="./index.js"></script>
-</body>
+  </div>
+  </section>
 
 </html>
 
