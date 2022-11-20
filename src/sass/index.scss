@@ -9,3 +9,14 @@
     list-style: none;
     display: flex;
 }
+.photo-card {
+    min-width: 300px;
+    transition: transform var(--animation-duration)var(--timing-function);
+    border-radius: 4px;
+    flex-basis: 20%;
+    margin: 12px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+}
