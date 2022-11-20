@@ -1,8 +1,8 @@
 import axios from "axios";
-export default class NewsApiServise {
+export default class NewsApiService {
     constructor () {
-        this.searchQuery = ''
-        this.page = 1
+        this.searchQuery = '';
+        this.page = 1;
         this.API_KEY = "31322734-692d0c8f8a819df0edc128403";
         this.SITE = 'https://pixabay.com/api';
         this.PER_PAGE = 40;
@@ -30,7 +30,6 @@ async myApi() {
 }
 
   set query(newQuery) {
-
     this.searchQuery = newQuery;
 }
 }
