@@ -41,7 +41,7 @@ loadMoreBtn.refs.button.addEventListener('click', fetchHits);
  }
 
  function fetchHits(){
-  loadMoreBtn.anable();
+  loadMoreBtn.enable();
   newsApiService.myApi().then(({hits, totalHits}) => {
     if(newsApiService.query === '') {
     Notify.failure('Sorry, there are no images matching your search query. Please try again.');
