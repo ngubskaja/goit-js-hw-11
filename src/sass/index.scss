@@ -1,5 +1,20 @@
 @import './common';
 @import './example';
+
+.container {
+    width: 100%;
+    z-index: 500;
+    background-color: #0f31f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+}
+
+.search-form {
+    height: 35px;
+    justify-content: center;
+    display: flex;
+}
 .gallery {
     flex-wrap: wrap;
     justify-content: center;
