@@ -18,12 +18,21 @@ const loadMoreBtn = new LoadMoreBTN({
 })
 
 let totalPages = 0;
+
 const newsApiService = new NewsApiService();
-const lightbox = new SimpleLightbox('.galery a', {
-  close: true,
-  captionsData: 'alt',
-  captionDelay: 250,
-});
+
+const lightbox = {
+  init(){
+    this.lightbox = new SimpleLightbox('.gallery a', {
+      captionsData: 'alt',
+      captionDelay: 250,
+      close: true,
+    });
+  },
+  refresh() {
+    this.lightbox.refresh();
+  }
+};
 
 
 
@@ -55,7 +64,7 @@ loadMoreBtn.refs.button.addEventListener('click', fetchHits);
   }
   Notify.success(`Hooray! We found ${totalHits} images.`);
   createResultMarkup(hits)
-  new SimpleLightbox('.galery a');
+  lightbox.init();
   if(totalPages < 1 ){
     Notify.warning('Sorry, there are no images matching your search query. Please try again.')
     clearArticleContainer()
